@@ -1,0 +1,29 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="title_adm_content del_title">
+    <h2>Удаление поста "{{ title_post }}"</h2>
+
+    <!--Для флеш-сообщений-->
+    <div class="flashed_msgs_here">
+        {% for category, msg in get_flashed_messages(True) %}
+            {% if category != "success" %}
+                <h3 class="{{ category }}">{{ msg }}</h3>
+            {% else %}
+                <a href="{{ url_for('.all_posts') }}" class="{{ category }}">{{ msg }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="operation_post operation_del">
+    <form action="" method="POST" id="delete_post_form">
+        <label for="del_inp">Для удаления введите название поста:</label>
+        <input type="text" name="del_inp" placeholder="{{ title_post }}" />
+        <input type="submit" value="Удалить" title="Вы уверены?"/>
+    </form>
+</div>
+
+{% endblock %}

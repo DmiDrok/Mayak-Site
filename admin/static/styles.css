@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+*::selection{
+    background-color: #30e9fa;
+    color: #fff;
+}
+
+body{
+    background-color: #f5f7fb;
+    height: 100vh;
+    display: grid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-template-rows: 100px auto;
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+}
+
+section#auth_admin{
+    display: grid;
+    height: 100%;
+}
+
+#auth_admin .block_auth{
+    width: 30%;
+    justify-self: center;
+    align-self: center;
+    background-color: #fafafa;
+}
+
+#auth_admin form{
+    display: grid;
+    grid-row-gap: 1rem;
+    padding: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#auth_admin form label{
+    text-decoration: underline;
+}
+
+#auth_admin form label::first-letter{
+    font-size: 20px;
+}
+
+#auth_admin form input{
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+#auth_admin form input[type="submit"]{
+    cursor: pointer;
+    width: 70%;
+    justify-self: end;
+    padding: 5px 15px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition-duration: .2s;
+}
+
+#auth_admin form input[type="submit"]:hover{
+    background-color: #f5f7fb;
+}
+
+#admin_nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 100px;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+#admin_nav #adm_logo a{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+#admin_nav #adm_logo a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+#admin_nav nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#admin_nav nav a{
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#admin_nav nav a:not(:first-child){
+    margin-left: 2rem;
+}
+
+#admin_nav nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+#admin_nav .special_adm_link{
+    color: red;
+}
+
+#admin_nav .special_adm_link:hover{
+    color: #ad1b1b;
+    text-decoration: underline;
+}
+
+#admin_nav .special_adm_link.active{
+    color: #ad1b1b;
+    text-decoration: underline;
+}
+
+#content_main_admin{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 80%;
+    justify-self: center;
+    margin-top: 2rem;
+    border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 10;
+}
+
+.other_adm_content{
+    margin-top: 1rem;
+}
+
+.title_adm_content h2{
+    text-decoration: underline;
+    font-style: oblique;
+    cursor: default;
+}
+
+.other_adm_content{
+    padding: 0 2rem;
+}
+
+.operation_post{
+    margin-top: 2rem;
+}
+
+.operation_post form{
+    display: grid;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-auto-flow: column;
+    grid-column-gap: 1rem;
+}
+
+.operation_post form div label::first-letter{
+    font-size: 23px;
+}
+
+.operation_post form div{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+}
+
+.operation_post form div:nth-child(2) input[type="submit"]{
+    justify-self: end;
+    align-self: end;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.operation_post form div:nth-child(2) input[type="submit"]:hover{
+    background-color: #fafafa;
+    text-decoration: underline;
+}
+
+.operation_post form input[type="checkbox"]{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#label_for_del_images_id{
+    cursor: pointer;
+}
+
+#label_for_del_images_id input{
+    margin-left: 5px;
+}
+
+#label_for_del_prev_id{
+    cursor: pointer;
+}
+
+#label_for_del_prev_id input{
+    margin-left: 5px;
+}
+
+.operation_post form input:not(input[type="submit"]), .operation_post form textarea{
+    padding: 5px 10px;
+    font-size: 19px;
+}
+
+.operation_post form textarea{
+    resize: none;
+}
+
+.add_text_post{
+    position: relative;
+}
+
+#panels_opt_post{
+    display: grid;
+    position: absolute;
+    top: 2.5rem;
+    right: -18rem;
+    display: grid;
+    grid-row-gap: 0.7rem;
+}
+
+#panels_opt_post .panel_opt{
+    background-color: #fafafa;
+    padding: 9px;
+    border: 2px solid #d0d0d0;
+    cursor: pointer;
+    transition-duration: .1s;
+    border-radius: 2px;
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+}
+
+#panels_opt_post .panel_opt p{
+    text-align: center;
+}
+
+#panels_opt_post .panel_opt:hover{
+    background-color: #d0d0d0;
+}
+
+#panels_opt_post .line_opts{
+    display: flex;
+}
+
+#panels_opt_post .line_opts div:not(:first-child){
+    margin-left: 0.7rem;
+}
+
+.operation_post form input:focus{
+    background-color: #fafafa;
+}
+
+.operation_post form textarea:focus{
+    background-color: #fafafa;
+}
+
+.title_adm_content{
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 350px auto;
+}
+
+.flashed_msgs_here{
+    justify-self: start;
+}
+
+.flashed_msgs_here h3.error{
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+}
+
+.flashed_msgs_here h3.success, a.success{
+    font-size: 18px;
+    color: green;
+    text-decoration: underline;
+}
+
+.content_adm .all_posts{
+    display: grid;
+    grid-row-gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.content_adm .all_posts .post{
+    position: relative;
+    border: 2px solid #1ea3af;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.content_adm .all_posts .post > a{
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.content_adm .all_posts .post:hover{
+    border: 2px solid #05cd05;
+}
+
+.content_adm .all_posts .post:hover .title_post{
+    color: #05cd05;
+}
+
+.content_adm .all_posts .post:hover .category_post b{
+    color: #05cd05;
+}
+
+.content_adm .all_posts .post:hover .date_post b{
+    color: #05cd05;
+}
+
+
+.content_adm .all_posts .post .content_post{
+    position: relative;
+}
+
+.content_adm .all_posts .post .title_post{
+    font-size: 20px;
+    font-weight: bold;
+    color: #159898;
+    word-wrap: anywhere;
+    padding: 10px 0;
+    overflow-x: hidden;
+}
+
+.content_adm .all_posts .post .text_post{
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 700px;
+    position: relative;
+}
+
+.content_adm .all_posts .post .text_post::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), #ffffff 100%);
+}
+
+.content_adm .all_posts .post .date_post{
+    position: absolute;
+    right: 1rem;
+    bottom: -1rem;
+}
+
+.content_adm .all_posts .post .category_post{
+    position: absolute;
+    right: 1rem;
+    top: -1rem;
+}
+
+.content_adm .all_posts .post .category_post i, .content_adm .all_posts .post .date_post i{
+    text-decoration: underline;
+}
+
+.content_adm .all_posts .post b{
+    color: #159898;
+}
+
+.content_adm .all_posts .post .options_post{
+    position: absolute;
+    right: -4rem;
+    z-index: -1;
+    bottom: 50%;
+    margin-bottom: -58px;
+}
+
+.content_adm .all_posts .post .options_post .opt{
+    display: block;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-duration: .2s;
+}
+
+.content_adm .all_posts .post .options_post #del_post{
+    background-color: #9b1717;
+}
+
+.content_adm .all_posts .post .options_post #del_post:hover{
+    background-color: #5b0101;
+}
+
+.content_adm .all_posts .post .options_post #change_post{
+    background-color: #05cd05;
+}
+
+.content_adm .all_posts .post .options_post #change_post:hover{
+    background-color: #039203;
+}
+
+.content_adm .all_posts .post .options_post .opt:not(:first-child){
+    margin-top: 10px;
+}
+
+.operation_del{
+    display: grid;
+}
+
+#delete_post_form{
+    display: grid;
+    grid-auto-flow: row !important;
+    grid-row-gap: 1rem;
+    width: 40%;
+    justify-self: center;
+    padding: 2rem;
+    border: 5px solid #fafafa;
+    border-radius: 5px;
+}
+
+#delete_post_form label::first-letter{
+    font-size: 23px;
+}
+
+#delete_post_form input[type="submit"]{
+    justify-self: end;
+    align-self: end;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#delete_post_form input[type="submit"]:hover{
+    background-color: #fafafa;
+    text-decoration: underline;
+}
+
+.del_title{
+    grid-template-columns: auto !important;
+}

@@ -1,0 +1,355 @@
+{% extends 'base.html' %}
+
+<!--Главная страница-->
+{% block content %}
+{{ super() }}
+<div class="wrapper_first index">
+	<!--Блок, затемняющий блок с видео-->
+	<div id="dark_background"></div>
+
+	<video muted autoplay loop id="video_object">
+		<source src="{{ url_for('static', filename='videos/video_index.mp4') }}">
+	</video>
+
+	<!--Блок, который будет стоять посередине-->
+	<div class="center_block">
+		<div class="slider">
+			<!--<input type="radio" name="slide" id="s1">
+			<input type="radio" name="slide" id="s2">   
+			<input type="radio" name="slide" id="s3">-->                     
+
+			<div class="slider_line">
+				<section class="slider_element first_slide">
+					<div class="header_block">
+						<h1>Молодёжный центр "Маяк"</h1>
+					</div>
+
+					<div class="text">
+						<p>
+							Здравствуйте. Наша команда рада приветствовать Вас на страницах этого сайта, и конечно же будем рады видеть вас в Молодёжном Центре "Маяк", расположенного по адресу: <br> РФ, Московская облать, г. Егорьевск, 2 микрорайон, д. 25
+						</p>
+					</div>
+
+					<div class="button_sub_text">
+						<button>
+							<a href="https://vk.com/calisthenics18" target="_blank" title="Сообщество ВКонтакте">
+								Наше сообщество ВК
+							</a>
+						</button>
+					</div>
+				</section>
+
+				<section class="slider_element">
+					<div class="header_block">
+						<h1>Молодёжный центр "Маяк"</h1>
+					</div>
+
+					<div class="text">
+						<p>
+							МСУ ММЦ "Маяк" учрежден постановлением Главы Егорьевского района от 9 сентября 2003 г. с целью обеспечения активного участия молодежи в социально-экономической, политической и культурной жизни города и района.
+						</p>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="slider_navigation">
+			<label for="s1" class="nav_bar" id="first_button_bar"></label>
+			<label for="s2" class="nav_bar" id="second_button_bar"></label>
+			<!--<label for="s3" class="nav_bar" id="third_button_bar"></label>-->
+		</div>
+	</div>					
+</div>
+
+<div class="wrapper_second">
+	<div class="text_block_wrapper_second">
+		<h2>
+			Вступай в наши ряды!
+			<span class="invisible"></span>
+		</h2>
+	</div>
+
+	<div class="container">
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/calisthenics.jpg') }}" alt="" class="image_block">
+
+			<div class="full_white">
+				<div class="info_block">
+					<div class="text_block_container">
+						<h3>Тренажёрный зал</h3>
+					</div>
+
+					<div class="button_block_container">
+						<button>
+							<a href="https://vk.com/calisthenics18" target="_blank" title="Сообщество ВКонтакте">
+								ВКонтакте
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/dom.jpg') }}" alt="" class="image_block">
+
+			<div class="full_white">
+				<div class="info_block">
+					<div class="text_block_container">
+						<h3>МООМ "ДОМ"</h3>
+					</div>
+
+					<div class="button_block_container">
+						<button>
+							<a href="https://vk.com/moomdom" target="_blank" title="Сообщество ВКонтакте">
+								ВКонтакте
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>						
+		</div>
+
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/dance.jpg') }}" alt="" class="image_block">
+
+			<div class="full_white">
+				<div class="info_block">
+					<div class="text_block_container">
+						<h3>Школа танца</h3>
+					</div>
+
+					<div class="button_block_container">
+						<button>
+							<a href="https://vk.com/dance_shagi" target="_blank" title="Сообщество ВКонтакте">
+								ВКонтакте
+							</a>
+						</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<div class="wrapper_third">
+	<div class="container_slider">
+		<div class="container_line">
+			<section class="block">
+				<div class="text_locate">
+					<span>Новости</span>
+
+					<p>Проект <a href="https://vk.com/calisthenics18" target="_blank">Calisthenics</a> базирует свою деятельность на базе центра.</p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/calisthenics.jpg') }}" alt="">
+				</div>
+			</section>
+
+			<section class="block">
+				<div class="text_locate">
+					<span>Новости</span>
+
+					<p>Волонтёры из <a href="https://vk.com/moomdom" target="_blank">МООМ "ДОМ"</a> базируют свою деятельность на базе центра.</p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/dom.jpg') }}" alt="">
+				</div>
+			</section>
+
+			<section class="block">
+				<div class="text_locate">
+					<span>Важная информация</span>
+
+					<p>Обучиться искусству танца - вы можете в <a href="https://vk.com/dance_shagi" target="_blank">Школе танцев</a>.</p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/dance_image1.jpg') }}" alt="">
+				</div>
+			</section>
+
+			<section class="block">
+				<div class="text_locate">
+					<span>Важная информация</span>
+
+					<p><a href="{{ url_for('yurist') }}" target="_blank">Юристы</a> базируют свою деятельность на базе центра.</p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/yurist_human_2.jpg') }}" alt="">
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<button id="prev">
+		‹
+	</button>
+
+	<button id="next">
+		›
+	</button>
+</div>
+
+<div class="wrapper_fourth">
+	<!--Первый контейнер с секциями-->
+	<div class="container">
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/society.png') }}" alt="">
+
+			<p>Социальное становление молодёжи</p>
+		</div>
+
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/life.png') }}" alt="">
+
+			<p>Развитие личностных качеств молодёжи</p>
+		</div>
+
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/rupor.png') }}" alt="">
+
+			<p>Выбор жизненного пути молодёжью</p>
+		</div>
+
+		<div class="block">
+			<img src="{{ url_for('static', filename='img/zozh.png') }}" alt="">
+
+			<p>Пропаганда здорового образа жизни</p>
+		</div>
+	</div>
+	<!--Второй контейнер с секциями-->
+	<div class="media_block">
+		<div class="block media__first">
+			<div class="text_media">
+				<h3>Проводим для всех желающих тренировки по субботам!</h3>
+
+				<p>
+					Проект "Calisthenics"
+				</p>
+
+				<button>
+					<a href="{{ url_for('gym') }}">
+					Подробнее
+					</a>
+				</button>
+				
+			</div>
+		</div>
+
+		<div class="block media__second">
+			<div class="text_media">
+				<h3>Обучаем искусству танца в дружной обстановке!</h3>
+
+				<p>
+					Школа танца
+				</p>
+
+				<button>
+					<a href="{{ url_for('school_dance') }}">
+					Подробнее
+					</a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!--Третий контейнер с секциями-->
+	<div class="other_block">
+		<section class="block">
+			<div class="image_block other_contain">
+				<img src="{{ url_for('static', filename='img/mayak_image_first.jpg') }}" alt="Здание Молодёжного Центра 'Маяк'.jpg" class="image__other">
+			</div>
+
+			<div class="text_block other_contain">
+				<p>
+					Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные, тексты. Себя, которое продолжил залетают семантика бросил города дорогу океана они языкового. За, толку, которое имеет дорогу составитель образ одна безорфографичный?
+				</p>
+			</div>
+		</section>
+
+		<section class="block">
+			<div class="image_block other_contain">
+				<img src="{{ url_for('static', filename='img/mayak_image_second.jpg') }}" alt="Наша команда Молодёжного Центра 'Маяк'.jpg" class="image__other">
+			</div>
+
+			<div class="text_block other_contain">
+				<p>
+					Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Бросил деревни что своих ручеек скатился рот толку переписывается власти вдали, свое живет ведущими необходимыми, злых предупреждал строчка дороге до своего снова рекламных послушавшись обеспечивает по всей, щеке? Не, возвращайся, парадигматическая!
+				</p>
+			</div>				
+		</section>
+	</div>
+	<!--Четвёртый контейнер с секциями-->
+	<div class="media_block">
+		<div class="block media__third">
+			<div class="text_media">
+				<h3>По вопросам психологии вы можете довериться нашим специалистам.</h3>
+
+				<p>
+					Социально-психологическая помощь
+				</p>
+
+				<button>
+					<a href="{{ url_for('socio_psych') }}">
+					Подробнее
+					</a>
+				</button>
+			</div>
+		</div>
+
+		<div class="block media__fourth">
+			<div class="text_media">
+				<h3>Вы можете обратиться в наше юридическое бюро, в случае проблем.</h3>
+
+				<p>
+					Юридические услуги
+				</p>
+
+				<button>
+					<a href="{{ url_for('yurist') }}">
+					Подробнее
+					</a>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_text">
+		<div class="text_block_contain">
+			<h2>
+				Функции учреждения (в соответствии с уставом)
+				<span class="invisible"></span>
+			</h2>
+
+			<p>
+				В функции учреждения входят такие вещи, как: воспитание молодёжи(социальное становление), пропаганда здорового образа жизни, принятие участия в жизни города, развитие хороших личностных качеств молодёжи, повышение интереса политикой молодёжью, профилактика безнадзорности.
+				<br>
+				<br>
+				Приходите к нам в молодёжный центр "Маяк", расположенный по адресу РФ, Московская облать, г. Егорьевск, 2 микрорайон, д. 25, вас будут ждать мастера своего дела и мы уверяем вас, что вы хорошо проведёте время.
+			</p>
+		</div>
+	</div>
+</div>
+
+<section id="popup">
+	<div class="content_popup">
+		<h3>Детский телефон доверия</h3>
+
+		<div class="text_popup">
+			<p>Детский телефон доверия предназначен для оказания экстренной психологической помощи, для оказания моральной, эмоциональной или духовной поддержки.</p>
+
+			<p>Номер указан снизу, позвоните по нему, если у вас имеются проблемы.</p>
+		</div>
+
+		<button>
+			<a href="tel: 36316">3-63-16</a>
+		</button>
+
+		<span id="close">Х</span>
+	</div>	
+</section>
+
+<script src="{{ url_for('static', filename='javascript/js.js') }}"></script>
+{% endblock %}

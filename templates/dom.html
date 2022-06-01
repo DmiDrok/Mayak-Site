@@ -1,0 +1,362 @@
+{% extends 'base.html' %}
+{{ super() }}
+
+{% block content %}
+<div class="wrapper_first dom__wrapper_first">
+	<div id="dark_background"></div>
+
+	<div class="center_block">
+		<div class="slider">
+			<!--  <input type="radio" name="slide" id="s1">
+			<input type="radio" name="slide" id="s2">
+			<input type="radio" name="slide" id="s3">    -->                  
+
+			<div class="slider_line">
+				<section class="slider_element first_slide">
+					<div class="header_block">
+						<h1>
+							<span class="invisible"></span>
+							МООМ "ДОМ"
+						</h1>
+					</div>
+
+					<div class="text">
+						<p>
+							Наша команда рада видеть вас на странице, посвящённой волонтёрскому движению, базирующему свою деятельность на базе Молодёжного Центра "Маяк". МООМ "ДОМ" приглашает вас вступить в их ряды и помочь распространить волонтёрскую деятельность и на других.
+						</p>
+					</div>
+
+					<div class="button_sub_text">
+						<button>
+							<a href="https://vk.com/moomdom" target="_blank" title="Сообщество ВКонтакте">
+								Наше сообщество ВК
+							</a>
+						</button>					
+					</div>
+				</section>
+
+				<section class="slider_element">
+					<div class="header_block">
+						<h1>
+							<span class="invisible"></span>
+							МООМ "ДОМ"
+						</h1>
+					</div>
+
+					<div class="text">
+						<p>
+							Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Сих, имеет. Ты выйти всеми гор, снова, до несколько. Вершину инициал, моей одна которой оксмокс парадигматическая текста за всемогущая о пояс гор, свое ее текст!
+						</p>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="slider_navigation">
+			<label for="s1" class="nav_bar" id="first_button_bar"></label>
+			<label for="s2" class="nav_bar" id="second_button_bar"></label>
+			<!--<label for="s3" class="nav_bar" id="third_button_bar"></label>-->
+		</div>
+	</div>				
+</div>
+
+<div class="all_second_block">
+	<div class="container_info__all">
+		<div class="text_info__all">
+			<h3>
+				<span class="invisible"></span>
+				Кто мы такие и чем мы занимаемся?
+			</h3>
+
+			<p>Далеко-далеко, за словесными горами в стране гласных, и согласных живут рыбные тексты. Образ эта семь залетают текстами гор мир, толку, имеет. От всех безорфографичный она бросил прямо однажды, выйти до, толку лучше все ipsum решила. Продолжил вопроса языкового однажды буквоград, знаках жизни коварных, вопрос, жаренные не курсивных подпоясал.</p>
+		</div>
+
+		<div class="images_info__all">
+			<div class="first_images_block">
+				<img src="{{ url_for('static', filename='img/dom.jpg') }}" alt="" class="image_info__all">
+				<img src="{{ url_for('static', filename='img/dom_2.jpg') }}" alt="" class="image_info__all">
+			</div>
+
+			<div class="second_images_block">
+				<img src="{{ url_for('static', filename='img/dom_image1.jpg') }}" alt="" class="image_info__all">
+				<img src="{{ url_for('static', filename='img/dom_image2.jpg') }}" alt="" class="image_info__all">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper_third">
+	<div class="container_slider">
+		<div class="container_line">
+			<section class="block">
+				<div class="text_locate">
+					<span>Важная информация</span>
+
+					<p>Целью нашего проекта является вовлечение молодёжи в дела города и благотворительность.</p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/dom.jpg') }}" alt="">
+				</div>
+			</section>
+
+			<section class="block">
+				<div class="text_locate">
+					<span>Важная информация</span>
+
+					<p>По вопросам вступления пишите нашим администраторам: <a href="https://vk.com/uporotkaktus" target="_blank">Анне Козловой</a> или <a href="https://vk.com/fokinaalenapavlovna" target="_blank">Алёне Фокиной</a></p>
+				</div>
+
+				<div class="image_locate">
+					<img src="{{ url_for('static', filename='img/dom_2.jpg') }}" alt="">
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<button id="prev">
+		‹
+	</button>
+
+	<button id="next">
+		›
+	</button>
+</div>
+
+<div class="dom__wrapper_fourth">
+	<div class="container_dom">
+		<div class="container_dom_line">
+			<section class="dom_section_first">
+				<div class="block bl_1">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image1.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Игра "Сказка о здоровом человеке"</p>
+
+							<span>07.08.2018</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="block  bl_2">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image2.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Акция "День отказа от курения"</p>
+
+							<span>18.11.2020</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="block  bl_3">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image3.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Праздник "День защиты детей"</p>
+
+							<span>01.06.2018</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dom_section_second">
+				<div class="block  bl_4">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image4.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Актёрские способности</p>
+
+							<span>20.03.2018</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="block  bl_5">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image5.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Всемирный день фотографии</p>
+
+							<span>18.08.2016</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="block  bl_6">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image6.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Военно-патриотическая "Зарничка"</p>
+
+							<span>27.04.2017</span>
+						</div>
+					</div>
+				</div>
+			</section>	
+
+			<section class="dom_section_third">
+				<div class="block bl_7">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image7.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Светофорики </p>
+
+							<span>30.08.2016</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="block  bl_8">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image8.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>Занятия в Школе N4</p>
+
+							<span>13.04.2015</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="block  bl_9">
+					<div class="image_block_dom">
+						<img src="{{ url_for('static', filename='img/dom_image9.jpg') }}" alt="" class="block_image">
+
+						<div class="text_block_dom">
+							<p>"Веснянка"</p>
+
+							<span>07.06.2016</span>
+						</div>
+					</div>
+				</div>
+			</section>			
+		</div>
+
+		<div id="buttons_dom_slider">
+			<button id="prev_dom">❮</button>
+			<button id="next_dom">❯</button>
+		</div>
+	</div>
+</div>
+
+<div class="dom__wrapper_fifth">
+	<section id="dom_big_block">
+		<div id="image_block_big__dom">
+			<img src="{{ url_for('static', filename='img/dom_3.jpg') }}" alt="">
+		</div>
+
+		<div id="text_block__dom">
+			<div class="header_text_block">
+				<h2>Коротко о нашей организации.</h2>
+
+				<p>
+					Автор статьи:
+					<a href="https://vk.com/uporotkaktus" target="_blank">
+						Анна Козлова
+						<span class="invisible"></span>
+					</a>
+				</p>
+
+				<button>
+					<a href="https://vk.com/moomdom" target="_blank">
+						ВКонтакте
+					</a>
+				</button>
+			</div>
+
+			<div class="main_content_big__scroll">
+				<p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные, тексты. Инициал даже заманивший толку власти снова его пояс лучше буквоград текст наш силуэт вопроса своего что великий они возвращайся за, одна, свой курсивных залетают использовало.</p>
+				<br>
+				<p>Семантика семь одна lorem страну рыбного приставка, знаках скатился власти снова все, щеке диких пустился рот последний это возвращайся дороге, рукописи реторический? Города правилами ее большого, ведущими, подпоясал вскоре бросил, выйти, переулка необходимыми коварный журчит.</p>
+				<br>
+				<p>Страну продолжил то жизни, ipsum вершину необходимыми путь. Встретил продолжил последний, знаках текста несколько имеет текстами журчит приставка, большого рукопись снова буквоград своих предупредила города образ, которое речью путь, живет они свою взобравшись. Использовало, продолжил.</p>
+				<br>
+				<p>Необходимыми своих над диких коварных семь он напоивший, великий не по всей, осталось продолжил предупредила которое реторический, мир домах текстами. Города lorem свой, путь, буквенных от всех, вопроса великий пор журчит, себя моей лучше жизни там дорогу?</p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script src="{{ url_for('static', filename='javascript/js.js') }}"></script>
+
+<script>
+	function domSlider(){
+		const 
+			sliderDom = document.querySelector(".container_dom");
+			lineDom = document.querySelector('.container_dom_line');
+			
+		let leftOff = 0;
+			buttonDomNext = document.querySelector("#next_dom");
+			buttonDomPrev = document.querySelector("#prev_dom");
+
+			buttonDomNext.addEventListener("click", function(){
+				leftOff = leftOff + document.querySelector(".container_dom_line section").offsetWidth;
+
+				if(leftOff > document.querySelector(".container_dom_line section").offsetWidth*2){
+					leftOff = 0;
+				}
+
+				lineDom.style.left = -leftOff + "px";
+			})
+
+			buttonDomPrev.addEventListener("click", function(){
+				leftOff = leftOff - document.querySelector(".container_dom_line section").offsetWidth;
+
+				if(leftOff < 0){
+					leftOff = document.querySelector(".container_dom_line section").offsetWidth*2;
+				}
+
+				lineDom.style.left = -leftOff + "px";
+			})
+		}
+
+	domSlider()
+</script>
+
+<script>
+	let buttonNext = document.querySelector("#next_dom");
+		buttonPrev = document.querySelector("#prev_dom");
+
+		buttonNext.addEventListener("click", function(){
+			buttonNext.style.color = "#bababa";
+			buttonPrev.style.color = "";
+		})
+
+		buttonPrev.addEventListener("click", function(){
+			buttonPrev.style.color = "#bababa";
+			buttonNext.style.color = "";
+		})
+</script> 
+
+<!--Код для скрытия скролла-->
+<!--<script>
+	let content = document.querySelector(".main_content_big__scroll");
+
+	content.addEventListener("mouseover", function(){
+		document.body.style.overflowY = "hidden";
+	})
+
+	content.addEventListener("mouseout", function(){
+		document.body.style.overflowY = "scroll";
+	})
+</script>-->
+
+<!--<script>
+	function al(){
+		if(confirm("Подтвердить переход?")){
+			window.location.assign("https://www.google.ru/")
+		}
+	}
+
+	al()
+</script>-->
+{% endblock %}

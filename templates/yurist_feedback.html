@@ -1,0 +1,503 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<div class="feedback__wrapper_first">
+	<div class="text_feedback_find__first">
+		<h2>
+			Отзывы наших клиентов
+			<span class="invisible"></span>
+		</h2>
+	</div>
+
+	<section class="feedback">
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="{{ url_for('static', filename='img/human_1.jpg') }}" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="{{ url_for('static', filename='img/vk_2.png') }}" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<!--------------------------------------------------------------------->
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block hidden">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block hidden">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block hidden">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block hidden">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+	</section>
+</div>
+
+<div id="button_load_more">
+	<button>
+		<span>Показать ещё...</span>
+	</button>
+</div>
+{% endblock %}

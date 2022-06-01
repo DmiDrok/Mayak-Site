@@ -1,0 +1,405 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="wrapper_first yurist__wrapper_first">
+	<div id="dark_background"></div>
+
+	<div class="center_block">
+			<div class="slider">
+				<!-- <input type="radio" name="slide" id="s1">
+				<input type="radio" name="slide" id="s2">   
+				<input type="radio" name="slide" id="s3"> -->                     
+
+				<div class="slider_line">
+					<section class="slider_element first_slide">
+						<div class="header_block">
+							<h1>
+								<span class="invisible"></span>
+								Юридические услуги
+							</h1>
+						</div>
+
+						<div class="text">
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал семь снова грустный за выйти, свой эта подзаголовок по всей жизни домах деревни диких что? Он свою, буквенных ipsum образ.
+							</p>
+						</div>
+
+						<div class="button_sub_text">
+							<button>
+								<a href="https://vk.com/dance_shagi" target="_blank" title="Сообщество ВКонтакте">
+									Наше сообщество ВК
+								</a>
+							</button>					
+						</div>
+					</section>
+
+					<section class="slider_element">
+						<div class="header_block">
+							<h1>
+								<span class="invisible"></span>
+								Юридические услуги
+							</h1>
+						</div>
+
+						<div class="text">
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Сих прямо ты себя, предупредила, возвращайся которой его страну рекламных. Страна последний своих снова, первую строчка, города ручеек если грамматики осталось коварных, мир парадигматическая заглавных!
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		<div class="slider_navigation">
+			<label for="s1" class="nav_bar" id="first_button_bar"></label>
+			<label for="s2" class="nav_bar" id="second_button_bar"></label>
+			<!--<label for="s3" class="nav_bar" id="third_button_bar"></label>-->
+		</div>
+	</div>				
+</div>
+
+<div class="all_second_block">
+	<div class="container_info__all">
+		<div class="text_info__all">
+			<h3>
+				<span class="invisible"></span>
+				Вы можете на нас положиться.
+			</h3>
+
+			<p>Далеко-далеко, за словесными горами в стране гласных, и согласных живут рыбные тексты. Образ эта семь залетают текстами гор мир, толку, имеет. От всех безорфографичный она бросил прямо однажды, выйти до, толку лучше все ipsum решила. Продолжил вопроса языкового однажды буквоград, знаках жизни коварных, вопрос, жаренные не курсивных подпоясал.</p>
+		</div>
+
+		<div class="images_info__all">
+			<div class="first_images_block">
+				<img src="{{ url_for('static', filename='img/yurist_2.jpg') }}" alt="" class="image_info__all">
+				<img src="{{ url_for('static', filename='img/yurist_3.jpg') }}" alt="" class="image_info__all">
+			</div>
+
+			<div class="second_images_block">
+				<img src="{{ url_for('static', filename='img/yurist_4.jpg') }}" alt="" class="image_info__all">
+				<img src="{{ url_for('static', filename='img/yurist_5.jpg') }}" alt="" class="image_info__all">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="yurist__wrapper_third">
+	<div class="container_message">
+		<h2>Вы нуждаетесь в помощи юриста?</h2>
+
+		<p>Найдите способ связаться с юристом с помощью нашего раздела, доступного по кнопке ниже.</p>
+
+		<button>
+			<a href="{{ url_for('yurist_team')}}" target="_blank">Обратиться бесплатно</a>
+		</button>
+	</div>
+</div>
+
+<!--<div class="yurist__wrapper_fourth">
+	<div id="text_yurist_wrapper_fourth">
+		<h2>Нас рекомендует более 10000 человек</h2>
+	</div>
+
+	<section class="feedback">
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="{{ url_for('static', filename='img/human_1.jpg') }}" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="{{ url_for('static', filename='img/vk_2.png') }}" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/id231494229" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_1.jpg" alt="Иван Ургант">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Иван Ургант
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Экспертами, работающими на базе Молодёжного Центра "Маяк", была оказана хорошая помощь, связанная с моим личным бизнесом, который был на грани от провала. Благодарю вас ещё раз. Большое человеческое спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/galustyanrf" target="_blank" class="feedback_block">
+			<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_2.jpg" alt="Ваша Фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Михаил Галустян
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Были плохие отношения с начальником на одном строительном предприятии. Задержки выплат и несправедливое условие труда. Обратился к юристам из "Маяка". Очень сильно помогли мне дельным советом. Большое Вам спасибо!</p>
+			</div>
+		</a>
+		
+		<a href="https://vk.com/nagiev.universal" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_3.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/vk_2.png" alt="" class="client__contact">
+						Дмитрий Нагиев
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Бизнес по продаже мячиков был почти обанкрочен, юристы из "Маяка" очень помогли нам! Спасибо!</p>
+			</div>
+		</a>
+
+		<a href="https://vk.com/sasha.petrov" target="_blank" class="feedback_block">
+							<div class="name_client">
+				<div class="foto__client">
+					<img src="../img/human_4.jpg" alt="Ваша фотография">
+				</div>
+				
+				<div class="name_link__client">
+					<p>
+						<img src="../img/ok.png" alt="" class="client__contact">
+						Александр Петров
+						<span>04.02.2020</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="text_client">
+				<p>Юристы из "Маяка" помогли выйти из, казалось бы, безвыходной ситуации. Я вас очень сильно благодарю за проделанную работу.</p>
+			</div>
+		</a>
+	</section>
+
+<div id="yurist_more__button">
+		<button>
+			<a href="{{ url_for('yurist_feedback') }}">Посмотреть все отзывы</a>
+		</button>
+	</div>
+</div>-->
+
+<div class="wrapper_services yurist_services">
+	<div class="container">
+		<div class="about_services">
+			<h2>Мы оказываем следующие услуги:</h2>
+		</div>
+
+		<div class="titles_prices_services">
+			<ul>
+				<li>
+					<p>Консультация юриста</p>
+					<p>300 руб. <b>(до 1 часа)</b></p>
+				</li>
+				<li>
+					<p>Услуги по регистрации Юридического лица</p>
+					<p>2000 руб. <b>(1 регистрация)</b></p>
+				</li>
+				<li>
+					<p>Услуги по регистрации Индивидуального предпринимателя</p>
+					<p>600 руб. <b>(1 регистрация)</b></p>
+				</li>
+				<li>
+					<p>Внесение изменений в Уставные документы Юридического лица и в ЕГРЮЛ</p>
+					<p>1500 руб. <b>(1 изменение)</b></p>
+				</li>
+				<li>
+					<p>Подготовка Юридических документов</p>
+					<p>1500 руб. <b>(1 документ)</b></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="feedback_block">
+	<div class="container">
+		<div class="title_feedback">
+			<h2 id="scroll_here_feedback">Оставьте свою заявку прямо сейчас!</h2>
+		</div>
+
+		<div class="form_contact_here">
+			<form action="{{ url_for('yurist') }}" method="POST">
+				{{ form.hidden_tag() }}
+
+				{{ form.telefon.label() }} {{ form.telefon() }}
+				{{ form.email.label() }} {{ form.email() }}
+				{{ form.textarea_msg.label() }} {{ form.textarea_msg() }}
+				{{ form.submit_btn() }}
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

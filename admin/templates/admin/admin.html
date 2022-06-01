@@ -1,0 +1,16 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+{{ super() }}
+    <div class="title_adm_content">
+        <h2>Информация о блоге</h2>
+    </div>
+
+    <div class="other_adm_content">
+        <h3>
+            <a href="{{ url_for('.all_posts') }}">
+                Количество постов: {{ all_posts_len }}
+            </a>
+        </h3>
+    </div>
+{% endblock %}

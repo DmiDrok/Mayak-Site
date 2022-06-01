@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('.static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Администрирование</title>
+    {% endif %}
+
+</head>
+<body>
+    <section id="admin_nav">
+        <h1 id="adm_logo">
+            {% if admin %}
+            <a href="{{ url_for('.index') }}">Админ-панель</a>
+            {% else %}
+            <a href="{{ url_for('index') }}">?????</a>
+            {% endif %}
+        </h1>
+
+        {% if admin %}
+        <nav>
+            <a href="{{ url_for('.add_post') }}" class="special_adm_link {{ links['add_post'] }}">Добавить пост</a>
+            <a href="{{ url_for('.all_posts') }}" class="special_adm_link {{ links['all_posts'] }}">Все посты</a>
+            <a href="{{ url_for('.index') }}" class="special_adm_link {{ links['index'] }}">Главная</a>
+            <a href="{{ url_for('.admin_pop') }}">Выход</a>
+        </nav>
+        {% endif %}
+    </section>
+
+    {% if admin %}
+        <section id="content_main_admin">
+            {% block content %}
+            {% endblock %}
+        </section>
+    {% else %}
+        {% block content_login %}
+        {% endblock %}
+    {% endif %}
+</body>
+</html>

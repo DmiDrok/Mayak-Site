@@ -1,0 +1,155 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="title_adm_content">
+    <h2>Редактирование поста</h2>
+
+    <!--Для флеш-сообщений-->
+    <div class="flashed_msgs_here">
+        {% for category, msg in get_flashed_messages(True) %}
+            {% if category != "success" %}
+                <h3 class="{{ category }}">{{ msg }}</h3>
+            {% else %}
+                <a href="{{ url_for('.all_posts') }}" class="{{ category }}">{{ msg }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="operation_post">
+    <form action="" enctype="multipart/form-data" method="POST">
+        <div class="left_block">
+
+            <label for="zip_images_load">Картинки (Внутри ZIP) (Если требуются)</label>
+            <input type="file" name="zip_images_load" />
+
+            <label id="label_for_del_images_id" for="del_images_id">
+                Удалить нынешние картинки из поста
+                <input type="checkbox" id="del_images_id" name="del_images" title="Удалить нынешние картинки поста" />        
+            </label>
+
+            <label for="title">Название:</label>
+            <input type="text" value="{{ title_post }}" name="title" title="Название новости (поста)" id="title_post" />
+
+            <label for="category">Категория:</label>
+            <input type="text" value="{{ category_post }}" name="category" title="Категория новости (поста)" />
+
+            <div class="add_text_post">
+                <label for="text_content">Текст:</label>
+                <textarea name="text_content" id="content_here" cols="30" rows="7" title="Текст новости (поста)">{{ text_content_post | safe }}</textarea>
+
+                <div id="panels_opt_post">
+                    <div class="para_opts line_opts">
+                        <div id="add_p" class="panel_opt" title="Добавить параграф">
+                            <p>
+                            /p
+                            </p>
+                        </div>
+                        
+                        <div id="add_i" class="panel_opt" title="Добавить курсив">
+                            <p>
+                                /i
+                            </p>
+                        </div>
+
+                        <div id="add_b" class="panel_opt" title="Добавить жирный текст">
+                            <p>
+                                /b
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="decor_opts line_opts">
+                        <div id="add_hr" class="panel_opt" title="Добавить черту">
+                        <p>
+                            hr/
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="imgs_opts line_opts">
+                        <div id="add_img" class="panel_opt" title="Добавить картинку">
+                            <p>
+                                /img
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_block">
+            <div class="top_in_right_block">
+                <label for="image_load">Превью поста:</label>
+                <input type="file" name="image_load" />
+
+                <label id="label_for_del_prev_id" for="del_prev_id">
+                    Удалить старое превью
+                    <input type="checkbox" id="del_prev_id" name="del_prev" title="Удалить нынешние картинки поста" />        
+                </label>
+
+                <input type="submit" value="Редактировать" title="Создать новость" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--Скрипт для добавления тегов в textarea при формировании нового поста-->
+<script>
+    //Объявляем необходимые переменные
+    let textarea = document.getElementById("content_here");
+    let add_p = document.getElementById("add_p");
+    let add_i = document.getElementById("add_i");
+    let add_b = document.getElementById("add_b");
+    let add_hr = document.getElementById("add_hr");
+    let add_img = document.getElementById("add_img");
+
+    //Переменные для вставок
+    let textToAdd = "";
+
+    //При нажатии на добавление параграфа
+    add_p.onclick = function(){
+        textToAdd = "<p></p>";
+        textarea.value += textToAdd;
+    }
+
+    //При нажатии на добавление курсива
+    add_i.onclick = function(){
+        textToAdd = "<i></i>";
+        textarea.value += textToAdd;
+    }
+
+    //При нажатии на добавление жирного текста
+    add_b.onclick = function(){
+        textToAdd = "<b></b>";
+        textarea.value += textToAdd;
+    }
+
+    //При нажатии на добавление черты
+    add_hr.onclick = function(){
+        if (textarea.value.length > 0){
+            textToAdd = "\n<hr/>\n";
+        }
+        else{
+            textToAdd = "<hr/>\n";
+        }
+
+        textarea.value += textToAdd;
+    }
+
+    //При нажатии на добавление картинки
+    add_img.onclick = function(){
+        let title_post = document.getElementById("title_post").value.replace(/[?<>\\/:*\"]/g, "").trim();
+        if (title_post.length == 0){
+            alert("Введите название поста!")
+        }
+        else{
+            textToAdd = `\n<img class='img_into_post' src='/static/posts/${title_post}/'></img>\n`
+            textarea.value += textToAdd;
+        }
+    }
+
+</script>
+{% endblock %}

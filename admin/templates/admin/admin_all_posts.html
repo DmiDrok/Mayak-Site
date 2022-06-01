@@ -1,0 +1,47 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+{{ super() }}
+<div class="title_adm_content">
+    <h2>Все посты ({{ all_posts_len }} поста[ов])</h2>
+
+    <!--Для флеш-сообщений-->
+    <div class="flashed_msgs_here">
+        {% for category, msg in get_flashed_messages(True) %}
+            {% if category != "success" %}
+                <h3 class="{{ category }}">{{ msg }}</h3>
+            {% else %}
+                <a href="{{ url_for('.all_posts') }}" class="{{ category }}">{{ msg }}</a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="content_adm">
+    <div class="all_posts">
+        {% for post in posts %}
+        <div class="post">
+            <a href="{{ url_for('post', post_id=post['id']) }}">
+                <div class="content_post">
+                    <h3 class="title_post">{{ post["title"] }}</h3>
+                    <p class="text_post">{{ post["text"] | striptags }}</p>
+                    <p class="category_post"><b>Категория:</b> <i>{{ post["category"] }}</i></p>
+                    <p class="date_post"><b>Дата:</b> <i>{{ post["date"] }}</i></p>
+                </div>
+            </a>
+
+            <!--Кнопки с настройками поста-->
+            <div class="options_post">
+                <a href="{{ url_for('.del_post', post_id=post['id']) }}" id="del_post" class="opt" title="Удалить пост">
+                    <p>X</p>
+                </a>
+
+                <a href="{{ url_for('.remake_post', post_id=post['id']) }}" class="opt" id="change_post" class="opt" title="Редактировать пост">
+                    <p>Ред.</p>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

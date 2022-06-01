@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<section class="info_posts_mayak">
+    <div class="all_posts_title">
+        <h2>
+            Новости Маяка
+            <i class="line_info"></i>
+        </h2>
+    </div>
+
+    {% if posts %}
+    <div class="all_posts_here">
+        {% for post in posts %}
+            <div class="post">
+                <div class="img_post">
+                    <img src="{{ url_for('post_image', post_id=post['id']) }}">
+                </div>
+
+                <div class="about_post">
+                    <p class="title_post">{{ post["title"][0:15] }}</p>
+                    <p class="text_post">{{ post["text"] | striptags }}</p>
+                    
+                    <div class="dop_about">
+                        <a href="{{ url_for('post', post_id=post['id']) }}" class="btn_read_post">Читать</a>
+                        <p class="date_post">{{ post["date"] }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    {% else %}
+    <div class="not_found_posts">
+        <h3>Упс, тут пусто! Но лишь пока! ;)</h3>
+    </div>
+    {% endif %}
+</section>
+
+{% endblock %}

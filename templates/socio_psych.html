@@ -1,0 +1,417 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<div class="wrapper_first psiholog__wrapper_first">
+	<div id="dark_background"></div>
+
+	<div class="center_block">
+			<div class="slider">
+				<!-- <input type="radio" name="slide" id="s1">
+				<input type="radio" name="slide" id="s2">   
+				<input type="radio" name="slide" id="s3"> -->                     
+
+				<div class="slider_line">
+					<section class="slider_element first_slide">
+						<div class="header_block">
+							<h1>
+								<span class="invisible"></span>
+								Психологическая помощь
+							</h1>
+						</div>
+
+						<div class="text">
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал семь снова грустный за выйти, свой эта подзаголовок по всей жизни домах деревни диких что? Он свою, буквенных ipsum образ.
+							</p>
+						</div>
+
+						<div class="button_sub_text">
+							<button>
+								<a href="https://vk.com/dance_shagi" target="_blank" title="Сообщество ВКонтакте">
+									Наше сообщество ВК
+								</a>
+							</button>					
+						</div>
+					</section>
+
+					<section class="slider_element">
+						<div class="header_block">
+							<h1>
+								<span class="invisible"></span>
+								Психологическая помощь
+							</h1>
+						</div>
+
+						<div class="text">
+							<p>
+								Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Сих прямо ты себя, предупредила, возвращайся которой его страну рекламных. Страна последний своих снова, первую строчка, города ручеек если грамматики осталось коварных, мир парадигматическая заглавных!
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		<div class="slider_navigation">
+			<label for="s1" class="nav_bar" id="first_button_bar"></label>
+			<label for="s2" class="nav_bar" id="second_button_bar"></label>
+			<!--<label for="s3" class="nav_bar" id="third_button_bar"></label>-->
+		</div>
+	</div>				
+</div>
+
+<div class="psiholog__wrapper_second">
+	<section class="container">
+		<div class="block">
+			<div class="text_info">
+				<h4 class="info_head">
+					Клиентов
+				</h4>
+
+				<span class="number">4 365</span>
+				<!--Картинка-->
+				<img src="{{ url_for('static', filename='img/reviews.png') }}" alt="Отзывы.png" class="image_info">
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="text_info">
+				<h4 class="info_head">
+					Консультаций
+				</h4>
+
+				<span class="number">6 327</span>
+				<!--Картинка-->
+				<img src="{{ url_for('static', filename='img/const.png') }}" alt="Консультация.png" class="image_info">
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="text_info">
+				<h4 class="info_head">
+					Ответов
+				</h4>
+
+				<span class="number">7 193</span>
+				<!--Картинка-->
+				<img src="{{ url_for('static', filename='img/share.png') }}" alt="Совет.png" class="image_info">
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- <div class="all_second_block">
+	<div class="container_info__all">
+		<div class="text_info__all">
+			<h3>
+				<span class="invisible"></span>
+				Мы - эксперты в своём деле.
+			</h3>
+
+			<p>Наша команда психологов базирует свою деятельность на базе <i>Молодёжного Центра "Маяк".</i> Мы занимаемся такими вещами, как: лечение наркомании, алкоголизма. <br> Так же, вы можете заказать выезд психолога на дом, позвонив по телефону <i>+7 (800) 555-35-35. <span class="invisible"></span></i></p>
+		</div>
+
+		<div class="images_info__all">
+			<div class="first_images_block">
+				<img src="../img/psiholog_1.jpg" alt="" class="image_info__all">
+				<img src="../img/psiholog_2.jpg" alt="" class="image_info__all">
+			</div>
+
+			<div class="second_images_block">
+				<img src="../img/psiholog_3.jpg" alt="" class="image_info__all">
+				<img src="../img/psiholog_4.jpg" alt="" class="image_info__all">
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="professor_block">
+	<div class="container_professor">
+		<div class="image_profi">
+			<img src="{{ url_for('static', filename='img/psiholog_profi.jpg') }}" alt="" class="image_profi_element profi_1">
+			<img src="{{ url_for('static', filename='img/psiholog_profi_2.jpg') }}" alt="" class="image_profi_element profi_2">
+			<img src="{{ url_for('static', filename='img/psiholog_profi_3.jpg') }}" alt="" class="image_profi_element profi_3">
+		</div>
+
+		<div class="text_profi">
+			<p>Консультация с психологом абсолютна анонимна и пройдёт в любое удобное для вас время. Психолог поможет вам выйти из любой трудной жизненной ситуации, будь то депрессия, проблемы в отношениях или же трудности, связанные с Вашей карьерой. Предлагаем вам не откладывать, а связаться с психологом и получить консультацию прямо сейчас.</p>
+		</div>
+
+		<button class="submit_psiho">
+			<a href="#scroll_here_feedback">
+				Обратиться
+			</a>
+		</button>
+	</div>
+</div>
+
+<div class="psiholog__wrapper_third">
+	<div class="text_all_wrapper_third">
+		<h3>Отзывы о наших психологах</h3>
+	</div>
+
+	<div class="container">
+		<div class="block">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block">
+			<span class="symbol">"</span>
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+					<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+
+		<div class="block hide">
+			<span class="symbol">"</span>
+
+			<p>Чувство, что всё поправимо и можешь спать со спокойной головой дорогого стоит. Огромное спасибо за трезвый взгляд на вызревающую годами эмоциональную мешанину и толчок в сторону поиска решения.</p>
+
+			<div class="client__name">
+				<p>Ольга лебедева, 10 сентября 2020</p>
+				<span>Егорьевск</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="button_psiholog_more">
+		<button class="more">
+			<span>Больше отзывов</span>
+		</button>
+	</div>
+</div>
+
+<div class="psiholog__wrapper_fourth">
+	<div class="text_all_wrapper_fourth">
+		<h2>Этапы консультации психолога</h2>
+	</div>
+
+	<div class="container">
+		<div class="block">
+			<div class="consultation">
+				<strong>Ваш вопрос психологу</strong>
+				<p>Обратитесь к психологу и опишите ему Вашу проблему</p>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="consultation">
+				<strong>Консультация в порядке очереди</strong>
+				<p>За время ожидания, ответьте на дополнительные вопросы, которые помогут лучше понять запрос</p>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="consultation">
+				<strong>Психологи ознакомятся с вопросом</strong>
+				<p>Первый, освободившийся психолог возьмет вашу консультацию. Вас уведомят об этом</p>
+			</div>
+		</div>
+
+		<div class="block">
+			<div class="consultation">
+				<strong>Вы получите консультацию психолога</strong>
+				<p>Психолог проконсультирует вас и поможет. После окончания вы сможете продлить консультацию</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper_services socio_psych">
+
+	<div class="container">
+
+		<div class="about_services">
+			<h2>Цены оказываемых нами услуг</h2>
+		</div>
+
+		<div class="titles_prices_services">
+			<ul>
+				<li>
+					<p>Детско-родительские взаимоотношения <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Психологические проблемы подростков <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Семейные взаимоотношения (конфликты, кризисы) <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Психологические проблемы взрослых <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Личностный и профессиональный рост <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Партнёрские взаимоотношения <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+				<li>
+					<p>Диагностика профессиональных направленностей <b>(1 час)</b></p>
+					<p>300 руб. <b>(30 мин. - 170 руб.)</b></p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<div class="feedback_block psiholog__wrapper_sixth">
+	<div class="container">
+		<div class="title_feedback title_contact_psych">
+			<h2 id="scroll_here_feedback">Вы можете оставить свою заявку прямо сейчас</h2>
+		</div>
+
+		<div class="form_contact_here">
+
+			<!--Флеш-сообщения тут-->
+			{% for category, msg in get_flashed_messages(True) %}
+				<div class="errors">
+					<h3 class="{{ category }}">
+						{{ msg }}
+					</h3>
+				</div>
+			{% endfor %}
+			
+			{% if form.telefon.errors %}
+				{% for error in form.telefon.errors %}
+					<div class="errors">
+						<h3 class="error">
+							{{ error }}
+						</h3>
+					</div>
+				{% endfor %}
+			{% endif %}
+
+			{% if form.email.errors %}
+				{% for error in form.email.errors %}
+					<div class="errors">
+						<h3 class="error">
+							{{ error }}
+						</h3>
+					</div>
+				{% endfor %}
+			{% endif %}
+
+			<form action="{{ url_for('socio_psych') }}" method="POST">
+				{{ form.hidden_tag() }}
+
+				{{ form.telefon.label() }} {{ form.telefon(value=telefon_user) }}
+				{{ form.email.label() }} {{ form.email(value=email_user) }}
+				{{ form.textarea_msg.label() }} {{ form.textarea_msg(value=message_user) }}
+				{{ form.submit_btn() }}
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

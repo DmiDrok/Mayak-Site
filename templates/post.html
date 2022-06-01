@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="go_back">
+    <a href="{{ url_for('all_posts') }}" id="back_to_all_posts">← К новостям</a>
+</div>
+
+<section class="post_display">
+    <h2 class="post_display_title">
+        {{ post["title"] }}
+        <i class="post_display_line"></i>
+    </h2>
+
+    <div class="other_content_post_display">
+        <div class="post_display_text">
+            {{ post["text"] | safe }}
+        </div>
+        
+        <div class="post_display_date">
+            {{ post["date"] }}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
